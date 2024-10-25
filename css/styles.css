@@ -1,0 +1,255 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: relative;
+    /*height: 70vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h1, h2 {
+    margin: 20px 0;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .banner h1{
+    color: rgba(38, 117, 52, 0.856);
+    
+  }
+
+  .banner p{
+    color: #266328;
+  }
+  
+  .boton {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #e64a19;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .planta {
+    text-align: center;
+  }
+  
+  .planta img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .planta h3 {
+    margin: 10px 0;
+  }
+
+  .beneficios-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .beneficio {
+    max-width: 250px;
+  }
+  
+  .beneficio img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  #como-ayudar ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding-left: 40px;
+  }
+  
+  .testimonio {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #4CAF50;
+  }
+  
+  .testimonio h4 {
+    margin-top: 10px;
+    color: #4CAF50;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #ff5722;
+    text-decoration: none;
+  }
+  
+  /* Sección de Plantas Endémicas */
+#plantas-endemicas {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  #plantas-endemicas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Contenedor de las tarjetas de plantas */
+  .plantas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
+    gap: 20px;
+  }
+  
+  /* Tarjetas de las plantas */
+  .tarjeta-planta {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .tarjeta-planta img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .tarjeta-planta h3 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin: 15px 0;
+  }
+  
+  .tarjeta-planta p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .tarjeta-planta strong {
+    color: #333;
+  }
+  
+  /* Efecto hover para la tarjeta */
+  .tarjeta-planta:hover {
+    transform: translateY(-10px);
+  }
+
+  /* Botón "Leer más" en cada tarjeta */
+.leer-mas {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leer-mas:hover {
+    background-color: #e64a19;
+  }
+  /* Estilos para la barra de búsqueda */
+.buscador {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buscador input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.buscador input:focus {
+  border-color: #ff5722;
+}
+
+#filtros {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#filtros button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#filtros button:hover {
+  background-color: #e64a19;
+}
+
+  
+  
+  
+  
+  

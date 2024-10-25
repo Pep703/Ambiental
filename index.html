@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preservación de Plantas Endémicas</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+          <h1>Preservación de Plantas Endémicas</h1>
+          <p>Descubre la riqueza de nuestras plantas y cómo podemos protegerlas</p><br><br>
+          <a href="#plantas-endemicas" class="boton">Explorar Plantas</a>
+        </div>
+      </header>
+
+  <main>
+    <section id="plantas-endemicas">
+        <h2>Plantas Endémicas de Tuxtla Gutierrez, Chiapas</h2>
+
+        <section id="filtros">
+          <h3>Filtrar por Hábitat</h3>
+          <button onclick="filtrarPlantas('todos')">Todos</button>
+          <button onclick="filtrarPlantas('Mayor-Altura')">Árboles de mayor altura</button>
+          <button onclick="filtrarPlantas('Menor-Altura')">Árboles de menor altura</button>
+          <button onclick="filtrarPlantas('Arbustos')">Arbustos</button>
+          <button onclick="filtrarPlantas('Hierbas')">Hierbas</button>
+        </section>
+    
+
+        <div class="buscador">
+          <input type="text" id="buscador" placeholder="Buscar planta..." onkeyup="buscarPlanta()">
+        </div>
+        
+  
+        <div class="plantas-container">
+
+          <div class="tarjeta-planta Mayor-Altura">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuh1y0V9O0xAFsf8duOILus_xlJPh67jWZw&s" alt="Magnolia chiapensis">
+            <h3>Magnolia chiapensis</h3>
+            <p>La Magnolia de Chiapas es una planta única de esta región. Crece en los bosques nubosos y está bajo amenaza debido a la deforestación.</p>
+            
+            <a href="Plantas_Endemicas/magnolia_chiapensis.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+          
+          <div class="tarjeta-planta">
+            <img src="https://www.smgrowers.com/imagedb/Salvia_chiapensis.jpg" alt="Quercus chiapensis">
+            <h3>Salvia chiapensis</h3>
+            <p>Salvia chiapensis, también conocida como "Salvia de Chiapas", es una planta endémica de las montañas de Chiapas, México. Es una especie del género Salvia, que pertenece a la familia de las Lamiaceae. </p>
+            
+            <a href="Plantas_Endemicas/Salvia_chiapensis.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+
+          <div class="tarjeta-planta Mayor-Altura">
+            <img src="https://static.inaturalist.org/photos/88009271/large.jpg" alt="Quercus chiapensis">
+            <h3>Ficus insipida (Amate)</h3>
+            <p>Ficus insipida es una especie de árbol del género Ficus, que mantiene varios usos entre diferentes pueblos indígenas de América.</p>
+            <a href="Plantas_Endemicas/Amate.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+          
+          <div class="tarjeta-planta Menor-Altura">
+            <img src="https://www.researchgate.net/profile/Koto-Te-Nyiwa-Ngbolua/publication/323759836/figure/fig1/AS:606816362835968@1521687703680/Plant-of-Annona-reticulata-20_Q320.jpg" alt="Quercus chiapensis">
+            <h3>Annona reticulata</h3>
+            <p>La anona o Annona reticulata, también conocida como "fruta de corazón", es un árbol frutal tropical que pertenece a la familia Annonaceae</p>
+            <a href="Plantas_Endemicas/Anona.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+
+          <div class="tarjeta-planta Menor-Altura">
+            <img src="img/nanche.jpg" alt="Quercus chiapensis">
+            <h3>Nanche</h3>
+            <p> El nanche (Byrsonima crassifolia) es una especie frutícola perteneciente a la familia Malpighiaceae. </p>
+            <a href="Plantas_Endemicas/Nanche.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+
+          <div class="tarjeta-planta Menor-Altura">
+            <img src="img/nanche.jpg" alt="Quercus chiapensis">
+            <h3>Chincuya (Annona purpurea)</h3>
+            <p> Annona purpurea, llamada comúnmente manirote, soncoya, sincuya, chincuya, cabeza de negro o toreta, es una especie de la familia Annonaceae distribuida por América Central y zonas de Sudamérica. </p>
+            <a href="Plantas_Endemicas/Chincuya.html"  class="leer-mas">Leer más</a> <!-- Enlace que abre en nueva pestaña -->
+          </div>
+          
+      </section>
+
+      <section id="beneficios">
+        <h2>¿Por qué es importante conservar las plantas endémicas?</h2>
+        <div class="beneficios-container">
+          <div class="beneficio">
+            <img src="https://ap-cdn.sfo3.cdn.digitaloceanspaces.com/uploads/2022/10/eca26654-1024x614.jpg" alt="Ecología">
+            <h3>Beneficios Ecológicos</h3>
+            <p>Las plantas endémicas mantienen el equilibrio de los ecosistemas locales y proporcionan hábitats únicos para otras especies.</p>
+          </div>
+          <div class="beneficio">
+            <img src="https://oaxaca.eluniversal.com.mx/sites/default/files/styles/detalle_nota_1080x666_v22/public/2024/05/18/feria-regional-pitaya-oaxaca.jpeg?itok=R6u81IAB" alt="Economía">
+            <h3>Valor Económico</h3>
+            <p>Algunas plantas endémicas tienen potenciales usos medicinales y económicos aún no explorados.</p>
+          </div>
+          <div class="beneficio">
+            <img src="https://bekaab.org/wp-content/uploads/2019/12/11790.jpg" alt="Medicina">
+            <h3>Uso Medicinal</h3>
+            <p>Muchas plantas endémicas son utilizadas en remedios tradicionales y podrían ser clave para futuros descubrimientos científicos.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="como-ayudar">
+        <h2>¿Cómo puedes ayudar?</h2>
+        <p>Involúcrate en la preservación de las plantas endémicas participando en nuestra comunidad.</p>
+        <ul>
+          <li>Comparte información sobre las plantas endémicas en redes sociales.</li>
+          <li>Participa en el foro y comparte tus conocimientos o dudas.</li>
+          <li>Reporta avistamientos de plantas en nuestro mapa interactivo.</li>
+          <li>Únete a proyectos de conservación locales o apoya iniciativas de reforestación.</li>
+        </ul>
+        <a href="#foro" class="boton">Participar en el Foro</a>
+      </section>
+
+      <section id="testimonios">
+        <h2>Historias de éxito</h2>
+        <div class="testimonio">
+          <p>"Gracias a esta plataforma, aprendí a identificar y preservar plantas endémicas en mi comunidad. ¡Es gratificante ver cómo contribuyo al medio ambiente!"</p>
+          <h4>- Juan Pérez, Voluntario en Proyectos de Reforestación</h4>
+        </div>
+        <div class="testimonio">
+          <p>"El mapa interactivo me ayudó a descubrir plantas endémicas cerca de mi región. Ahora puedo hacer un seguimiento de las especies que encuentro."</p>
+          <h4>- María García, Estudiante de Biología</h4>
+        </div>
+      </section>
+      
+      <footer>
+        <p>© 2024 Preservación de Plantas Endémicas. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">Twitter</a> 
+        </p>
+      </footer>
+      
+      
+      
+      
+  </main>
+</body>
+</html>
